@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pl" data-theme="crema">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6f1">
+  <meta name="description" content="Słownictwo, frazy i gramatyka do przygotowania do egzaminu DELE C2.">
+  <title>Hola C2 – Hiszpański</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="vocabulary.js"></script>
+  <script defer src="grammar.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Nawigacja główna">
+      <a class="brand" href="#home" aria-label="Hola C2, start">
+        <span class="brand-mark" aria-hidden="true">h<span>.</span></span>
+        <span class="brand-name">hola<span> C2</span><small>HISZPAŃSKI</small></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#home" data-route="home"><span class="nav-icon" aria-hidden="true">⌂</span><span>Start</span></a>
+        <a href="#words" data-route="words"><span class="nav-icon" aria-hidden="true">Aa</span><span>Słownictwo</span></a>
+        <a href="#phrases" data-route="phrases"><span class="nav-icon" aria-hidden="true">“ ”</span><span>Frazy</span></a>
+        <a href="#grammar" data-route="grammar"><span class="nav-icon" aria-hidden="true">≡</span><span>Gramatyka</span></a>
+        <a href="#review" data-route="review"><span class="nav-icon" aria-hidden="true">↻</span><span>Powtórki</span><span id="review-badge" class="nav-badge" hidden></span></a>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="mini-progress"><span>Twój postęp</span><strong id="sidebar-percent">0%</strong></div>
+        <div class="progress-track"><span id="sidebar-progress"></span></div>
+        <p>Postęp zapisywany jest na tym urządzeniu.</p>
+      </div>
+    </aside>
+
+    <div class="main-shell">
+      <header class="topbar">
+        <span class="breadcrumb" id="breadcrumb">Start</span>
+        <label class="theme-control"><span aria-hidden="true">◐</span><span class="theme-label">Motyw</span>
+          <select id="theme-select" aria-label="Motyw wizualny">
+            <option value="crema">Crema</option>
+            <option value="oceano">Océano</option>
+            <option value="bosque">Bosque</option>
+            <option value="lavanda">Lavanda</option>
+            <option value="noche">Noche</option>
+          </select>
+        </label>
+      </header>
+      <main id="app" class="page" tabindex="-1"></main>
+      <footer class="footer">Hola C2 · Materiały do nauki hiszpańskiego</footer>
+    </div>
+  </div>
+  <noscript>Włącz JavaScript w przeglądarce, aby korzystać z aplikacji.</noscript>
+</body>
+</html>
